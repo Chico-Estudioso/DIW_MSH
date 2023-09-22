@@ -1,0 +1,16 @@
+h1{
+    color: #ff0000;
+}
+h2{
+    color: black;
+    background-color: yellow;
+}
+p{
+    background-color: hsla(201, 30%, 67%, 0.5);
+} 
+img{
+    height: 300px;
+}
+#p1{
+    background-color: white;
+}

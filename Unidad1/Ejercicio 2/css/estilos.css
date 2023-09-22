@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+}
+th,td{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+th{
+    background-color: rgba(228, 222, 222, 0.199);
+}
+img{
+    height: 100px;
+}
