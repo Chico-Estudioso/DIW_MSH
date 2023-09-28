@@ -1,0 +1,49 @@
+#padre {
+    position: sticky;
+    width: 100%;
+    height: 400px;
+    background: salmon;
+}
+
+#moradete {
+    height: 50px;
+    width: 500px;
+    position: relative;
+    top: 15px;
+    left: 600px;
+    background-color: blueviolet;
+}
+
+#bola {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: yellow;
+    left: 900px;
+}
+
+#bluely {
+    position: fixed;
+    height: 100px;
+    width: 50px;
+    background: aqua;
+    right: 200px;
+    bottom: 30px;
+}
+
+#linea {
+    position: relative;
+    height: 5px;
+    width: 2000px;
+    top: -100px;
+    background: green;
+}
+
+#azulOsc {
+    position: absolute;
+    height: 400px;
+    width: 40px;
+    top: 30px;
+    background: blue;
+}
