@@ -10,23 +10,21 @@
 }
 
 #div2 {
-    width: 30px;
-    height: 30px;
     background-color: aqua;
-    text-align: center;
+    display: inline;
     float: left;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
 #div3 {
     background-color: sienna;
     display: inline;
     text-align: center;
-    float: top;
     justify-content: center;
     align-items: center;
     display: flex;
+    clear: none;
+}
 
+p {
+    float: left;
 }
