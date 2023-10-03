@@ -1,0 +1,53 @@
+#cabecera {
+    background-color: #1b1414;
+    display: flex;
+}
+
+#inicio {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: solid rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+#nosotros {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: solid rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+#productos {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: solid rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+#contacto {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: solid rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+#salir {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    border: solid rgba(0, 0, 0, 0.274);
+    float: right;
+    cursor: pointer;
+}
+
+#inicio:hover,
+#nosotros:hover,
+#productos:hover,
+#contacto:hover,
+#salir:hover {
+    background-color: red;
+}
