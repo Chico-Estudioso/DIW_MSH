@@ -1,6 +1,7 @@
 #cabecera {
     background-color: #1b1414;
-    display: flex;
+    width: 100%;
+    display: inline-block;
 }
 
 #inicio {
@@ -13,7 +14,7 @@
 
 #nosotros {
     color: white;
-    padding: 40px;
+    padding: 10px;
     font-size: 40px;
     border: solid rgba(0, 0, 0, 0.274);
     cursor: pointer;
@@ -40,8 +41,7 @@
     padding: 40px;
     font-size: 40px;
     border: solid rgba(0, 0, 0, 0.274);
-    
-    clear: right;
+    float: right;
     cursor: pointer;
 }
 
