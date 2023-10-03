@@ -40,7 +40,8 @@
     padding: 40px;
     font-size: 40px;
     border: solid rgba(0, 0, 0, 0.274);
-    float: right;
+    
+    clear: right;
     cursor: pointer;
 }
 
