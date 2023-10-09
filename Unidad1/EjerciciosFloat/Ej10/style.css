@@ -39,7 +39,6 @@ div {
 
 .container {
     background: #EBF7F8;
-    
 }
 
 .container.index {
@@ -49,16 +48,16 @@ div {
 
 .header {
     background: #FF9C56;
-    
 }
 
 .logo {
     background: #FF4D79;
-    float: right;
+    float: left;
 }
 
 .navigation {
     background: #E85F43;
+    float: right;
 }
 
 .sidebar {
@@ -111,4 +110,4 @@ div {
     content: "";
     clear: both;
     display: table;
-}   
+}

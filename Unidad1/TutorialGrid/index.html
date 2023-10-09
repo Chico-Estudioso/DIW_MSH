@@ -1,38 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios float y clear. Ej. 10</title>
-    <link rel="stylesheet" href="style.css" />
-
     <style>
-      /* Estilos para este ejercicio concreto */
-      .container {
-        width: 1024px;
-        margin: 0 auto;
-      }
-
-      .logo {
-        float: right;
-      }
-
-      .navigation {
-        float: left;
-      }
-
-      .sidebar {
-        height: 300px;
-      }
-
-      .sub-content {
-        height: 140px;
-        margin-bottom: 20px;
-      }
-
-      .sub-content-2 {
-        height: 140px;
-      }
       * {
         box-sizing: border-box;
       }
@@ -90,30 +60,34 @@
         width: 100%;
       }
     </style>
+    <title>Saludos</title>
   </head>
-
   <body>
-    <div class="container">
-      <div class="row header">
-        <div class="col-6">
-          <div class="navigation">navigation</div>
-        </div>
-        <div class="col-6">
-          <div class="logo">logo</div>
-        </div>
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
       </div>
 
-      <div class="row main-content">
-        <div class="col-3">
-          <div class="sidebar">sidebar</div>
-        </div>
-        <div class="col-9">
-          <div class="sub-content">sub content</div>
-          <div class="sub-content-2">sub content 2</div>
-        </div>
+      <div class="col-9">
+        <h1>The City</h1>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+        <p>
+          Resize the browser window to see how the content respond to the
+          resizing.
+        </p>
       </div>
-
-      <div class="footer">footer</div>
+      <div class="header"><h3>FOOTER</h3></div>
     </div>
   </body>
 </html>
