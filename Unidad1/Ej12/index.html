@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios float y clear. Ej. 12</title>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicios float y clear. Ej. 12</title>
-  <link rel="stylesheet" href="ej-10.css">
+    <style>
+      /* Estilos para este ejercicio concreto */
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
 
-  <style>
-    /* Estilos para este ejercicio concreto */
-    .container {
-      width: 100%;
-      margin: 0 auto;
-    }
+      .sidebar {
+        float: left;
+        width: 100%;
+        height: 200px;
+      }
 
-    .sidebar {
-      float: left;
-      width: 33.3333%;
-      height: 300px;
-    }
+      .main-content {
+        float: left;
+        width: 100%;
+        height: 200px;
+      }
 
-    .main-content {
-      float: left;
-      width: 33.3333%;
-      height: 300px;
-    }
+      .sub-content {
+        float: left;
+        width: 100%;
+        height: 200px;
+      }
 
-    .sub-content {
-      float: left;
-      width: 33.3333%;
-      height: 300px;
-    }
+      .footer {
+        clear: left;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+    </style>
+  </head>
 
-    .footer {
-      clear: left;
-    }
-  </style>
-</head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
 
-<body>
-  <div class="container">
-    <div class="header">header</div>
+      <div class="row">
+        <div class="col-4">
+          <div class="sidebar">sidebar</div>
+        </div>
+        <div class="col-4">
+          <div class="main-content">main content</div>
+        </div>
+        <div class="col-4">
+          <div class="sub-content">sub content</div>
+        </div>
+      </div>
 
-    <div class="sidebar">sidebar</div>
-    <div class="main-content">main content</div>
-    <div class="sub-content">sub content </div>
-
-    <div class="footer">footer</div>
-  </div>
-
-  <p><strong>Explicación:</strong></p>
-  <p>En esta ocasión no podemos hay que añadir la clase <code>clearfix</code> a ningún elemento porque los elementos flotantes no tienen un contenedor común. Por tanto, tenemos que incluir <code>clear</code> en el footer para que el navegador lo sitúe debajo de los 3 elementos flotantes. Puedes observar con el inspector la diferencia de añadir o no la propiedad clear al footer.</p>
-
-</body>
-
+      <div class="footer">footer</div>
+    </div>
+  </body>
 </html>
