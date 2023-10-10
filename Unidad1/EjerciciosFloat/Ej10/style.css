@@ -4,110 +4,108 @@ h3,
 h4,
 h5,
 div {
-    text-transform: uppercase;
-    font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 p {
-    text-transform: none;
-    font-weight: normal;
+  text-transform: none;
+  font-weight: normal;
 }
 
 a,
 a:active,
 a:visited {
-    text-decoration: none;
-    color: #88ABC2;
+  text-decoration: none;
+  color: #88abc2;
 }
 
 a:hover {
-    color: #FFBE56;
+  color: #ffbe56;
 }
 
 .example {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .example img {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 div {
-    box-sizing: border-box;
-    padding: 20px;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .container {
-    background: #EBF7F8;
+  background: #ebf7f8;
 }
 
 .container.index {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .header {
-    background: #FF9C56;
+  background: #ff9c56;
 }
 
 .logo {
-    background: #FF4D79;
-    float: left;
+  background: #ff4d79;
 }
 
 .navigation {
-    background: #E85F43;
-    float: right;
+  background: #e85f43;
 }
 
 .sidebar {
-    background: #FFBE56;
+  background: #ffbe56;
 }
 
 .main-content {
-    background: #88ABC2;
-    color: #fff;
+  background: #88abc2;
+  color: #fff;
 }
 
 .sub-content {
-    background: #49708A;
+  background: #49708a;
 }
 
 .sub-content-2 {
-    background: #355163;
+  background: #355163;
 }
 
 .footer {
-    background: #AAD637;
+  background: #aad637;
 }
 
 .post {
-    background: #AAD637;
-    margin-bottom: 20px;
+  background: #aad637;
+  margin-bottom: 20px;
 }
 
 .image {
-    background: #8EB22E;
+  background: #8eb22e;
 }
 
 .post_excerpt {
-    background: #708C24;
-    padding: 20px;
-    margin: 0;
+  background: #708c24;
+  padding: 20px;
+  margin: 0;
 }
 
 .widget {
-    background: #BB326B;
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    font-size: 36px;
-    text-align: center;
-    padding-top: 75px;
+  background: #bb326b;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 75px;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
