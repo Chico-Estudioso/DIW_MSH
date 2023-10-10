@@ -1,32 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios float y clear. Ej. 7</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .header,
+      .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .menu {
+        width: 100%;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="div1">Cabecera</div>
-    <div id="Cajas">
-      <div id="caja1">blabla</div>
-      <div id="caja2">blabla</div>
-      <div id="caja3">blabla</div>
-      <div id="caja4">blabla</div>
+    <div class="row">
+      <div class="header col-12">
+        <h1>Cabecera</h1>
+      </div>
     </div>
-    <h2>Lorem Impsum</h2>
-    <p id="Texto">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-      provident debitis explicabo nihil nesciunt, asperiores in harum
-      perferendis voluptatum eligendi ad magnam corporis adipisci tenetur
-      <br />
-      <br />
-      aliquid, doloremque maxime expedita soluta? Reprehenderit modi accusantium
-      molestias laudantium soluta sint perferendis asperiores architecto Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iusto nostrum
-      inventore, libero quasi ex ipsa accusamus cum velit, numquam dolor neque
-      est eius itaque officia odio? Magnam, maxime aperiam?
-    </p>
-    <div id="div2">Pie de Página</div>
+    <div class="row">
+      <div class="col-4">
+        <div class="clearfix">
+          <div class="column menu">
+            <ul>
+              <li>Lorem</li>
+              <li>Ipsum</li>
+              <li>Dolor</li>
+              <li>Sit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="column content">
+          <h1>Lorem ipsum</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum
+            cum quidem! Velit minima libero quasi aspernatur commodi explicabo
+            adipisci, quis facilis, veniam, quae aperiam unde numquam magnam
+            minus nesciunt.
+          </p>
+          <p>
+            Veritatis numquam fugiat rem odit perferendis maiores delectus et
+            reiciendis, saepe optio ipsum facere ipsam accusantium maxime ab
+            deleniti neque quod? Vitae, nulla illo deleniti commodi quaerat ab
+            tempora dicta!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer col-12">
+        <p>Pie de página</p>
+      </div>
+    </div>
   </body>
 </html>

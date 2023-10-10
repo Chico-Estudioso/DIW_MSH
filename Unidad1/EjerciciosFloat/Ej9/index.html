@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ej9 90%</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios float y clear. Ej. 9</title>
+
+    <style>
+      #header {
+        background-color: #333;
+        overflow: auto;
+      }
+
+      #header a {
+        padding: 14px 18px;
+        color: white;
+        text-decoration: none;
+      }
+
+      #header a:hover {
+        background-color: red;
+      }
+
+      .f-left {
+        float: left;
+      }
+
+      .f-right {
+        float: right;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="cabecera">
-      <a id="inicio">inicio</a>
-      <a id="nosotros">nosotros</a>
-      <a id="productos">productos</a>
-      <a id="contacto">contacto</a>
-      <a id="salir">salir</a>
+    <div id="header">
+      <div class="row">
+        <div class="col-12">
+          <a class="f-left" href="#">Inicio</a>
+          <a class="f-left" href="#">Nosotros</a>
+          <a class="f-left" href="#">Productos</a>
+          <a class="f-left" href="#">Contacto</a>
+          <a class="f-right" href="#">Salir</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
