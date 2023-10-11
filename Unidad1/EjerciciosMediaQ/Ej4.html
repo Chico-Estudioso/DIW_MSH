@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej4</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #header {
+      background-color: black;
+      padding: 15px;
+    }
+    #div1,
+    #div2 {
+      color: white;
+    }
+    @media (max-width: 600px) {
+      div {
+        width: 100%;
+      }
+    }
+    @media (min-width: 600px) {
+      #div1,
+      #div2 {
+        float: left;
+        display: inline;
+      }
+      #div2 {
+        margin-left: 5px;
+      }
+      #header {
+        overflow: auto;
+      }
+    }
+  </style>
+  <body>
+    <div id="header">
+      <div id="div1">Layout horizontal ejercicio 4</div>
+      <div id="div2">Layout vertical ejercicio 4</div>
+    </div>
+  </body>
+</html>
