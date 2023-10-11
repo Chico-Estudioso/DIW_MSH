@@ -1,0 +1,106 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 6px 12px;
+    font-size: 1.125em;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+.d-block {
+    display: block;
+}
+
+/* Estilos para los ejercicios */
+.ejercicio {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.ejercicio h3 {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.ejercicio h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+img.img-centered {
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 1);
+    display: block;
+    margin: 15px auto;
+}
+
+img.img-centered.max-760px {
+    max-width: 760px;
+}
+
+img.img-centered.max-100pc {
+    max-width: 100%;
+}
+
+.img-sub {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el código HTML */
+code {
+    font-size: 1.25em;
+}
+
+code.inline-code {
+    color: #d63384;
+    word-wrap: break-word;
+}
+
+pre {
+    font-family: Consolas, monospace;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
