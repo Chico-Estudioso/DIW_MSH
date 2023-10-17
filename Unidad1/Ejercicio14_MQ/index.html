@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    header {
+      background-color: lightpink;
+      padding: 20px;
+    }
+
+    .aside {
+      background-color: lightblue;
+      padding: 20px;
+    }
+
+    .article {
+      background-color: lightgreen;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: darkgray;
+      padding: 20px;
+    }
+
+    /*@media (max-width: 600) {
+      .aside {
+        width: 100%;
+      }
+      .article {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 900) {
+      #espe1,
+      #espe2 {
+        width: 50%;
+      }
+      #espe3,
+      #espe4,
+      #espe5 {
+        width: 100%;
+      }
+    }*/
+  </style>
+  <body>
+    <header>Header</header>
+    <div class="row">
+      <div class="col-2 col-s-2">
+        <aside class="aside">Aside</aside>
+      </div>
+      <div class="col-10 col-s-10">
+        <div class="col-4 col-s-6">
+          <article class="article" id="espe1">Article</article>
+        </div>
+        <div class="col-4 col-s-6">
+          <article class="article" id="espe2">Article</article>
+        </div>
+        <div class="col-4 col-s-12">
+          <article class="article" id="espe3">Article</article>
+        </div>
+        <div class="col-6 col-s-12">
+          <article id="espe4" class="article">Article</article>
+        </div>
+        <div class="col-6 col-s-12">
+          <article id="espe5" class="article">Article</article>
+        </div>
+      </div>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
