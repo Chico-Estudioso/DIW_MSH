@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14. Ejercicio responsive design</title>
+  <link rel="stylesheet" href="14.Ejercicio-responsive-design.css">
+  <!-- highlight.css -->
+  <link rel="stylesheet" href="highlight/vs2015.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Ejercicio Responsive Design</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="ejercicio">
+        <h3>Utilizando únicamente el CSS proporcionado, crea un HTML con el siguiente layout y comportamiento adaptativo.</h3>
+
+        <br>
+        <h3>1. Para anchuras de pantalla mayores de 900px:</h3>
+        <p>El <code>aside</code> ocupará 2 columnas. Los <code>articles</code> ocuparán el espacio restante y se distribuirán en 2 filas de 3 elementos en la primera y 2 en la segunda.</p>
+        <img class="img-centered max-760px" src="img/950px.png" alt="Layout 950px">
+
+        <br>
+        <h3>2. Para anchuras de pantalla entre 600px y 900px:</h3>
+        <p>El <code>aside</code> ocupará 3 columnas. Los <code>articles</code> ocuparán el espacio restante y se distribuirán 2+1+1+1.</p>
+        <img class="img-centered max-760px" src="img/750px.png" alt="Layout 750px">
+
+        <br>
+        <h3>3. Para anchuras de pantalla menores de 600px:</h3>
+        <p>Todos los elementos ocuparán toda la anchura disponible.</p>
+        <img class="img-centered max-760px" src="img/550px.png" alt="Layout 550px">
+
+        <h4>CSS general columnas:</h4>
+        <pre><code class="language-css">/* For mobile phones: */
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* For tablets: */
+@media (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* For desktop: */
+@media (min-width: 900px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}</code></pre>
+
+        <h4>CSS para este ejercicio:</h4>
+        <pre><code class="language-css">* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header {
+  background-color: lightpink;
+  padding: 20px;
+}
+
+aside {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+footer {
+  background-color: darkgray;
+  padding: 20px;
+}
+</code></pre>
+
+      </section>
+
+    </div>
+  </main>
+
+  <script src="highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>
