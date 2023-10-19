@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.imagen1 {
+    width: 100%;
+}
+
+#container {
+    width: 80%;
+    
+}
+
+#header {
+    background-color: #333;
+    overflow: auto;
+    position: sticky;
+}
+
+#header a {
+    padding: 14px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+#header a:hover {
+    background-color: red;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
