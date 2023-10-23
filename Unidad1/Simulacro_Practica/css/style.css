@@ -2,6 +2,37 @@
     box-sizing: border-box;
 }
 
+#cj1,
+#cj2,
+#cj3,
+#cj4,
+#cj5 {
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 16pt;
+}
+
+#cj1 {
+    background: greenyellow;
+}
+
+#cj2 {
+    background: rgb(190, 25, 53);
+}
+
+#cj3 {
+    background: lightblue;
+}
+
+#cj4 {
+    background: pink;
+}
+
+#cj5 {
+    background: blue;
+}
+
 .clearfix::after,
 .row::after {
     content: "";
@@ -9,19 +40,29 @@
     display: table;
 }
 
-.imagen1 {
+img {
     width: 100%;
 }
 
+aside {
+    display: block;
+}
+
 #container {
-    width: 80%;
-    
+    height: 200px;
+    background-image: url("../img/html5-wallpaper.jpg");
+    background-position: center;
+}
+
+#img+text1 {
+    text-align: center;
 }
 
 #header {
     background-color: #333;
     overflow: auto;
     position: sticky;
+
 }
 
 #header a {
