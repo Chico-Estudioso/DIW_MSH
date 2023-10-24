@@ -2,6 +2,24 @@
     box-sizing: border-box;
 }
 
+#sp1 {
+    background-color: aquamarine;
+}
+
+#spJ {
+    position: relative;
+    display: none;
+    width: 150px;
+    left: 40px;
+    background-color: yellow;
+}
+
+#maps{
+    width: 500px;
+    height: 450px;
+    
+}
+
 #cj1,
 #cj2,
 #cj3,
@@ -9,7 +27,7 @@
 #cj5 {
     height: 200px;
     padding: 20px;
-    margin: 20px;
+    margin: 0px;
     font-size: 16pt;
 }
 
@@ -54,7 +72,7 @@ aside {
     background-position: center;
 }
 
-#img+text1 {
+#imgtext1 {
     text-align: center;
 }
 

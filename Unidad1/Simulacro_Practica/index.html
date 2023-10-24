@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios float y clear. Ej. 9</title>
+    <title>Ejercicio Practica</title>
     <link rel="stylesheet" href="css/columnas.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -14,26 +14,26 @@
       <a class="f-left" href="#">Inicio</a>
       <a class="f-left" href="#">Nosotros</a>
       <a class="f-left" href="#">Productos</a>
-      <a class="f-right" href="#">Contacto</a>
+      <a class="f-right" href="contacto.html">Contacto</a>
     </nav>
 
     <div class="row">
       <div class="col-3 col-s-3">
         <aside>
           <div>
-            <a href="" class="img+text1">
+            <a href="" class="imgtext1">
               <img src="./img/gatito1.png" alt="gatito1" />
               <h2>Texto de prueba</h2>
             </a>
           </div>
           <div>
-            <a href="" class="img+text1">
+            <a href="" class="imgtext1">
               <img src="./img/gatito2.png" alt="gatito1" />
               <h2>Texto de prueba</h2>
             </a>
           </div>
           <div>
-            <a href="" class="img+text1">
+            <a href="" class="imgtext1">
               <img src="./img/gatito3.png" alt="gatito1" />
               <h2>Texto de prueba</h2>
             </a>
@@ -41,12 +41,21 @@
         </aside>
       </div>
 
-      <div class="col-9">
-        <div class="col-6" id="cj1">1</div>
-        <div class="col-6" id="cj2">2</div>
-        <div class="col-4" id="cj3">3</div>
-        <div class="col-4" id="cj4">4</div>
-        <div class="col-4" id="cj5">5</div>
+      <div class="col-9 col-s-9">
+        <div class="row">
+          <div class="col-8 col-s-12">
+            <div id="cj1">
+              Voy a <span id="sp1">aprobar el examen</span> de DIW!
+              <span id="spJ">¡Ja! Ni en sueños</span>
+            </div>
+          </div>
+          <div class="col-4 col-s-12"><div id="cj2">2</div></div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-s-4"><div id="cj3">3</div></div>
+          <div class="col-6 col-s-8"><div id="cj4">4</div></div>
+          <div class="col-3 col-s-12"><div id="cj5">5</div></div>
+        </div>
       </div>
     </div>
   </body>
