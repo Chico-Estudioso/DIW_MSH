@@ -14,11 +14,23 @@
     background-color: yellow;
 }
 
-#maps{
+#maps {
     width: 500px;
     height: 450px;
-    
+
 }
+
+#flechaUp {
+    background-color: #2b272793;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 40px;
+    padding: 15px;
+}
+
+#flechaUP {}
 
 #cj1,
 #cj2,
@@ -70,6 +82,32 @@ aside {
     height: 200px;
     background-image: url("../img/html5-wallpaper.jpg");
     background-position: center;
+}
+
+#contenedor {
+    background-color: gray;
+}
+
+#name {
+    width: 100%;
+}
+
+#apellidos {
+    width: 100%;
+}
+
+#texto {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#enviar {
+    margin: 0 auto;
+    margin-bottom: 4px;
+    display: block;
 }
 
 #imgtext1 {
