@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    [href*="pdf"] {
+      color: brown;
+    }
+    [data-category|="featured"] {
+      color: rgb(9, 121, 9);
+    }
+    [class$="active"] {
+      color: gold;
+    }
+    [role="main-header"] {
+      color: coral;
+    }
+    [title*="image"] {
+      color: darkblue;
+    }
+    
+  </style>
+  <body>
+    <a href="pdf">Soy un pdf</a>
+    <a href="ptdf">Soy un ptdf</a>
+    <br />
+    <br />
+    <div data-category="featured">Categoria featured</div>
+    <div data-category="1 featured">categoria 1 featured</div>
+    <br />
+    <br />
+    <div class="active">Class active</div>
+    <div class="active">Class active1</div>
+    <br />
+    <br />
+    <div role="main-header">main header</div>
+    <div role="main-header-1">main header</div>
+    <br />
+    <br />
+    <div title="image">Titulo image</div>
+    <div title="2image">Titulo image</div>
+  </body>
+</html>
