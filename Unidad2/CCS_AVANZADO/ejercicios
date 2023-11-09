@@ -1,9 +1,9 @@
-1).container .item :first-child
+1).container>.item:first-child
 
-2).container :last-child
+2).container :last-of-type
 
 3).container :only-child
 
-4).container :nth-child(3)
+4).container .item:nth-child(3)
 
-5).input[type=text]
+5).input[type=text]:focus   
