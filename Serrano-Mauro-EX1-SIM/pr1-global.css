@@ -31,10 +31,19 @@ footer {
     text-align: right;
 }
 
+.contenedor-rabia{
+    width: 100%;
+    padding: 0;
+}
+
 #c-Hommer {
     background-color: #d3ffd3;
 }
-
+.textoL::first-letter{
+    font-size: 19pt;
+    color: black;
+    
+}
 .contenedor {
     background-color: #eee;
     border: 1px solid black;
