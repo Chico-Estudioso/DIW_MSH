@@ -13,12 +13,11 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    width: 100%;
 }
 
 /* TABLETS: 600-900px */
 @media only screen and (min-width: 600px) {
-
     .col-t-1 {
         width: 8.33%;
     }
