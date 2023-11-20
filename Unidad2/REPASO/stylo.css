@@ -1,0 +1,20 @@
+
+header{
+    padding: 15px;
+    background-color: gray;
+    margin-bottom: 10px;    text-align: right;
+
+}
+
+footer{
+    padding: 15px;
+    background-color: gray;
+    margin-top: 10px;    text-align: right;
+
+}
+.imagen_HTML{
+    width: 100%;
+}
+.Width-Maximum{
+    width: 100%;
+}
