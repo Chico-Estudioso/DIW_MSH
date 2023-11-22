@@ -13,8 +13,12 @@ footer{
 
 }
 .imagen_HTML{
-    width: 100%;
+    width: 100px;
+    height: 100px;
 }
 .Width-Maximum{
     width: 100%;
+}
+.container{
+    margin: 0 auto;
 }

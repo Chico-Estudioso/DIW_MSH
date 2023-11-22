@@ -1,0 +1,76 @@
+:root {
+    --color-fondo: white;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    padding: 15px;
+}
+
+.imagen-Micro {
+    height: 30px;
+}
+
+#e-comprar {
+    background-color: var(--color-fondo);
+    float: right;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#e-comprar:hover {
+    background-color: black;
+    color: white;
+}
+
+.boxes {
+    border-radius: 20px;
+}
+
+
+#c-azul {
+    background-color: lightblue;
+}
+
+#c-roja {
+    background-color: lightcoral;
+}
+
+#c-cian {
+    background-color: lightcyan;
+}
+
+#c-amarilla {
+    background-color: lightgoldenrodyellow;
+}
+
+/*USO TEXT ALIGN PARA JUSTIFICAR EL TEXTO*/
+
+.z-texto {
+    padding: 15px;
+    text-align: justify;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.imagen-Mujer {
+    width: 100%;
+}
+
+html,
+body {
+    border: 0;
+}
