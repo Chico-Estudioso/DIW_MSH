@@ -1,18 +1,19 @@
 /* ---- Estilos básicos ---------------------------------------------------- */
+.clearfix::after {
+  content: ""; 
+  clear: both;
+  display: table;
+}
+
+*{
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background: #F2F5FE url("img/fondo.gif") 0 0 repeat-x;
-  font: 70%/160% "verdana", sans-serif;
+  background: linear-gradient(180deg, rgb(118, 138, 193) 0%, rgba(242,245,254,1) 30%);  font: 70%/160% "verdana", sans-serif;
   color: #192666;
-}
-
-.f-right{
-  float: right;
-}
-.f-left{
-  float: left;
 }
 
 a {
@@ -67,32 +68,26 @@ ol {
 /* ---- Layout ------------------------------------------------------------- */
 
 #contenedor {
-  width: 770px;
-  margin: 50px auto 0 auto;
+  padding: 16px;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 #cabecera {
-  width: 770px;
-  position: relative;
-  height: 100px;
-  margin: 0;
-  padding: 0;
   background: #233C9B url("img/cabecera.jpg") no-repeat;
   background-size: cover;
   color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px 30px;
 }
 
 #contenido {
-  width: 770px;
   background: #FFF;
 }
 
 #contenido #principal {
-  float: left;
-  width: 520px;
   margin-top: 15px;
-  margin-right: 10px;
-  padding: 0 0 0 20px;
   background: #FFF;
 }
 
@@ -115,15 +110,11 @@ ol {
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  position: absolute;
-  top: 35px;
-  left: 35px;
   margin: 0;
 }
 
 #cabecera #logo a {
   color: #FFF;
-  display: block;
   line-height: 35px;
 }
 
@@ -132,11 +123,7 @@ ol {
   text-decoration: underline;
 }
 
-#cabecera #buscador {
-  position: absolute;
-  top: 40px;
-  right: 20px;
-}
+
 
 #cabecera #buscador legend {
   display: none;
