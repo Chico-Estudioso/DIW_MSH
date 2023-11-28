@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios float y clear. Ej. 11</title>
+    <link rel="stylesheet" href="ej-10.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicios float y clear. Ej. 11</title>
-  <link rel="stylesheet" href="ej-10.css">
+    <style>
+      /* Estilos para este ejercicio concreto */
+      .container {
+        width: 1024px;
+        margin: 0 auto;
+      }
 
-  <style>
-    /* Estilos para este ejercicio concreto */
-    .container {
-      width: 100%;
-      margin: 0 auto;
-    }
+      .sub-container1 {
+        display: flex;
+        flex-basis: 30%;
+      }
 
-    .logo {
-      float: left;
-    }
+      .sub-container2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+      }
 
-    .navigation {
-      width: 70%;
-      float: right;
-    }
+      .sidebar {
+        height: 300px;
+      }
 
-    .sidebar {
-      float: left;
-      width: 25%;
-      height: 300px;
-    }
+      .sub-content {
+        height: 140px;
+        margin-bottom: 20px;
+      }
 
-    .sub-content {
-      float: right;
-      width: 70%;
-      margin-bottom: 20px;
-    }
+      .sub-content-2 {
+        height: 140px;
+      }
 
-    .sub-content-2 {
-      float: right;
-      width: 70%;
-    }
-  </style>
-</head>
+      .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .container2 {
+        display: flex;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="container">
+  <body>
+    <div class="container">
+      <div class="header container1">
+        <div class="logo">logo</div>
+        <div class="navigation">navigation</div>
+      </div>
 
-    <div class="header clearfix">
-      <div class="logo">logo</div>
-      <div class="navigation">navigation</div>
+      <div class="main-content container2">
+        <div class="sub-container1">
+          <div class="sidebar">sidebar</div>
+        </div>
+        <div class="sub-container2">
+          <div class="sub-content">sub content</div>
+          <div class="sub-content-2">sub content 2</div>
+        </div>
+      </div>
+
+      <div class="footer">footer</div>
     </div>
-
-    <div class="main-content clearfix">
-      <div class="sidebar">sidebar</div>
-      <div class="sub-content">sub content</div>
-      <div class="sub-content-2">sub content 2</div>
-    </div>
-
-    <div class="footer">footer</div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
