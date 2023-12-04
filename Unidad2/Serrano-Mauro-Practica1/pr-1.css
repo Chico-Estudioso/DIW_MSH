@@ -2,7 +2,7 @@
 /* ---- Estilos básicos ---------------------------------------------------- */
 body {
   background: rgb(150,175,245);
-  background: linear-gradient(180deg, rgb(126, 142, 186) 0%, rrgb(255, 255, 255)30%);
+  background: linear-gradient(180deg, rgba(150,175,245,1) 0%, rgba(242,245,254,1) 30%);
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
 }
@@ -96,8 +96,7 @@ ol {
 }
 
 #pie {
-  padding: 40px;
-  margin-bottom: 50px;
+  padding: 20px;
   background: #FFF;
   color: #6685CC;
   border-bottom-right-radius: 12px;
@@ -165,7 +164,7 @@ ol {
 }
 
 /* ---- Contenidos --------------------------------------------------------- */
-#contenido .articulo {
+#contenido article {
   padding: 20px;
   margin-bottom: 20px;
   border-top-right-radius: 10px;
@@ -174,11 +173,11 @@ ol {
   box-shadow: inset 2px 2px 23px 8px rgba(223,231,245,1);
 }
 
-#contenido .articulo img {
+#contenido article img {
   width: 100%;
 }
 
-#contenido .articulo h2 {
+#contenido article h2 {
   margin: 0 -20px;
   padding: 10px;
   background: #DEE5FD;

@@ -25,15 +25,15 @@
 }
 }
 @media only screen and (min-width: 600px) {
-  #sobremi .col-e-4{
+  #Sobre_mi .col-e-4{
     padding: 15px 0 0 15px;
   }
 }
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
-  .contenedor{
-    width: 70%;
+  #contenedor{
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -88,10 +88,9 @@
 
 /* For desktop: */
 @media only screen and (min-width: 900px) {
-  .contenedor{
-    width: 800px;
-    margin-left: 10px;
-    margin-right: 10px;
+  #contenedor{
+    max-width: 880px;
+    margin: 0 auto;
   }
   .col-e-1 {
     width: 8.33%;
