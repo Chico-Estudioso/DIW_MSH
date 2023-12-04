@@ -1,19 +1,18 @@
+
 /* ---- Estilos básicos ---------------------------------------------------- */
-.clearfix::after {
-  content: ""; 
-  clear: both;
-  display: table;
-}
-
-*{
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, rgb(118, 138, 193) 0%, rgba(242,245,254,1) 30%);  font: 70%/160% "verdana", sans-serif;
+  background: rgb(150,175,245);
+  background: linear-gradient(180deg, rgb(126, 142, 186) 0%, rrgb(255, 255, 255)30%);
+  font: 70%/160% "verdana", sans-serif;
   color: #192666;
+}
+
+.l-float{
+  float: left;
+}
+
+.r-float {
+  float: right;
 }
 
 a {
@@ -27,10 +26,6 @@ a:hover {
 p {
   margin: 1em 0;
   padding: 0;
-}
-
-.clear {
-  clear: both;
 }
 
 h1,
@@ -61,57 +56,56 @@ h3 {
 
 ul,
 ol {
-  margin: 1em 0 1em 2em;
+  margin: 1em 0 1em 0em;
   padding: 0;
 }
 
 /* ---- Layout ------------------------------------------------------------- */
 
-#contenedor {
-  padding: 16px;
+#contenedor{
   margin: 0 auto;
+  padding: 30px;
   margin-top: 50px;
 }
 
 #cabecera {
   background: #233C9B url("img/cabecera.jpg") no-repeat;
   background-size: cover;
-  color: #FFF;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   padding: 30px 30px;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 42px;
 }
 
 #contenido {
   background: #FFF;
 }
 
-#contenido #principal {
-  margin-top: 15px;
+#principal {
+  margin-top: 10px;
   background: #FFF;
 }
 
-#contenido #secundario {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+#secundario {
+  margin: 15px 0 0 0;
   padding-top: 20px;
-  margin: 10px;
-  background: #CEDBF9 url("img/fondo_columna.gif") no-repeat;
-  -webkit-box-shadow: inset 5px 0px 14px 2px rgb(200, 213, 244); 
-  box-shadow: inset 5px 0px 14px 2px rgb(169, 185, 224);
+  background-color: #CEDBF9;
+  -webkit-box-shadow: inset 5px 0px 14px 2px rgba(183,202,246,1); 
+  box-shadow: inset 5px 0px 14px 2px rgba(183,202,246,1);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
-/*Isaac estas sombras del #pie no las saqué por mi cuenta
-pedí ayuda a algunos de los de clase*/
+
 #pie {
-  padding: 10px;
+  padding: 40px;
   margin-bottom: 50px;
+  background: #FFF;
+  color: #6685CC;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   -webkit-box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
   box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
-  background: url("img/fondo_pie.jpg") no-repeat;
-  color: #6685CC;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
@@ -129,14 +123,9 @@ pedí ayuda a algunos de los de clase*/
   text-decoration: underline;
 }
 
-
-
-#cabecera #buscador legend {
-  display: none;
-}
-
 #cabecera #buscador fieldset {
   border: none;
+  padding: 6.5px auto;
 }
 
 /* ---- Menú --------------------------------------------------------------- */
@@ -147,13 +136,11 @@ pedí ayuda a algunos de los de clase*/
 
 #menu ul {
   margin: 0 10px;
-  padding: 0;
   list-style: none;
 }
 
 #menu ul li {
   margin: 0 5px 0 0;
-  padding: 0;
   float: left;
 }
 
@@ -161,7 +148,6 @@ pedí ayuda a algunos de los de clase*/
   display: block;
   position: relative;
   padding: 5px 15px;
-  border: 0;
   background: #253575;
   color: #B5C4E3;
   font-weight: bold;
@@ -180,14 +166,16 @@ pedí ayuda a algunos de los de clase*/
 
 /* ---- Contenidos --------------------------------------------------------- */
 #contenido .articulo {
-  clear: both;
-  margin: 0;
   padding: 20px;
-  background: url("img/fondo_articulo.jpg") no-repeat;
+  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-box-shadow: inset 2px 2px 23px 8px rgba(223,231,245,1); 
+  box-shadow: inset 2px 2px 23px 8px rgba(223,231,245,1);
 }
 
 #contenido .articulo img {
-  width: 490px;
+  width: 100%;
 }
 
 #contenido .articulo h2 {
@@ -197,9 +185,8 @@ pedí ayuda a algunos de los de clase*/
   color: #192666;
 }
 
-
 #contenido .info {
-  margin: 10px 0;
+  margin: 0 auto;
   padding-bottom: 8px;
   border-bottom: 1px solid #DEE5FD;
   color: #6685CC;
@@ -220,52 +207,52 @@ pedí ayuda a algunos de los de clase*/
   padding-left: 15px;
 }
 
-#contenido .info span.fecha {
-  background: url("img/icono_fecha.gif") 0 50% no-repeat;
+#contenido .info span.fecha img{
+  width: auto;
+  margin-top: 8px;
 }
 
-#contenido .info span.categoria {
-  background: url("img/icono_categoria.gif") 0 50% no-repeat;
-  margin-left: 8px;
+#contenido .info span.categoria img{
+  width: auto;
+  margin-top: 8px;
 }
 
-#contenido .info span.autor {
-  background: url("img/icono_autor.gif") 0 50% no-repeat;
-  margin-left: 8px;
+#contenido .info span.autor img{
+  width: auto;
+  margin-top: 8px;
 }
 
-#contenido .info span.comentarios {
-  background: url("img/icono_comentarios.gif") 0 50% no-repeat;
-  margin-left: 8px;
+#contenido .info span.comentarios img{
+  width: auto;
+  margin-top: 8px;
 }
 
-#contenido #secundario h3 {
-  padding: 10px 0 10px 10px;
-  margin-top: 20px;
+/* ----- Secundario -----------------------------------------------------*/
+
+
+#secundario h3 {
+  padding: 10px 10px 10px 10px;
+  margin-top: 0;
   background: #A0B9F3;
   color: #192666;
+  margin-left: 9px;
 }
 
-#contenido #secundario #sobremi img {
-  float: left;
+#Sobre_mi img {
+  width: 100%;
   margin: 4px 5px 0 0;
 }
 
-#contenido #secundario #sobremi p {}
-
-#contenido #secundario div {
-  padding: 0 10px;
+#Sobre_mi p {
+  margin-top: 0;
 }
 
 #contenido #secundario ul {
-  margin: 15px 0;
-  padding: 0;
+  margin: 15px 0 20px 0;
   list-style: none;
 }
 
 #contenido #secundario li {
-  margin: 0;
-  padding: 0;
   border-bottom: 1px solid #E0E8FA;
 }
 
@@ -287,10 +274,8 @@ pedí ayuda a algunos de los de clase*/
 }
 
 /* ---- Pie ---------------------------------------------------------------- */
-#pie p {
-  margin: 0;
+
+#copyright{
+  margin-right: 0 auto;
   padding: 0;
-  position: absolute;
-  top: 10px;
-  left: 40px;
 }
