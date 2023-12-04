@@ -70,7 +70,7 @@ ol {
 #contenedor {
   padding: 16px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 #cabecera {
@@ -92,20 +92,26 @@ ol {
 }
 
 #contenido #secundario {
-  float: left;
-  width: 200px;
-  margin: 15px 0 0 0;
-  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 20px;
+  margin: 10px;
   background: #CEDBF9 url("img/fondo_columna.gif") no-repeat;
+  -webkit-box-shadow: inset 5px 0px 14px 2px rgb(200, 213, 244); 
+  box-shadow: inset 5px 0px 14px 2px rgb(169, 185, 224);
 }
-
+/*Isaac estas sombras del #pie no las saqué por mi cuenta
+pedí ayuda a algunos de los de clase*/
 #pie {
-  clear: both;
-  height: 60px;
+  padding: 10px;
   margin-bottom: 50px;
+  -webkit-box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
+  box-shadow: inset 0px -10px 15px -8px rgba(0, 0, 0, 0.45);
   background: url("img/fondo_pie.jpg") no-repeat;
   color: #6685CC;
-  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
